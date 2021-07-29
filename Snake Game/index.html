@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ahmet Hızır Eren">
+    <title>PUNCTUAL SNAKE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="shortcut icon" href="Screenshot_1.jpg" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!--
+        -sözlük-
+        xSpeed:x ekseninde gitme olayı ve hızı (her fps'de 1 ölçü kadar);
+        ySpeed:y ekseninde gitme olayı ve hızı (her fps'de 1 ölçü kadar);
+        scale:ölçü;
+        direction:yön;
+    -->
+    <div class="sis"></div>
+    <article>
+        <div class="unmuted toggle-sound"  href="#">
+            <div class="tooltip--left sound" data-tooltip="Turn On/Off Sound">
+              <div class="sound--icon fa fa-volume-off"></div>
+              <div class="sound--wave sound--wave_one"></div>
+              <div class="sound--wave sound--wave_two"></div>
+              <div class="sound--wave sound--wave_three"></div>
+            </div>
+        </div>
+        <div class="playtoready">
+            <p>Press one of direction keys to start</p>
+        </div>
+        <div class="gameoveralert">
+            <h1>TİME İS UP</h1>
+            <h1>GAME OVER</h1>
+            <h1>YOUR SKOR</h1>
+            <h1 class="gameoveralert-p">1</h1>
+            <p><button>TRY AGAİN</button></p>
+        </div>
+        <img src="Screenshot_1-removebg-preview.png" alt="">
+        <h1>PUNCTUAL SNAKE</h1>
+        <button class="startbutton onhoverbutton">
+            START
+        </button>
+        <div class="howtoplay">
+            <h1>How To Play</h1>
+            <p>Click start button and press one of direction keys to start</p>
+            <p>Try to earn the most points in the limited time. if you eat apple you earn extra time. move with direction keys or direction buttons. Your score determines the time you earn for each apple.</p>
+            <p>Author: Ahmet Hızır Eren</p>
+            <p><a href="https://www.instagram.com/ahmeren05/?hl=tr">Intagram</a> & <a href="https://twitter.com/ahmeren05">Twitter</a> : @ahmeren05, Mail : <a href="mailto:ahmethizireren@gmail.com">ahmethizireren@gmail.com</a></p>
+        </div>
+        <canvas width="280" height="280" style="background-color: #275934;">
+        </canvas>
+        <div class="info">
+            <div class="time">
+                <p>TİME LEFT:</p>
+                <p class="timepbef">0</p>
+                <p class="timep"></p>
+            </div>
+            <div class="score">
+                <p>SCORE:</p>
+                <p class="scorep"></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="topbutton">></button>
+            <button class="rightbutton">></button>
+            <button class="downbutton">></button>
+            <button class="leftbutton">></button>
+        </div>
+    </article>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="main.js"> // main </script>
+    <script src="friut.js"> // friut </script>
+    <script src="snake.js"> // snake </script>
+    <script src="barrier.js"> // barrier </script>    
+    <script src="barrier2.js"> // barrier </script>    
+    <script src="draw.js"> // draw </script>
+</body>
+</html>
